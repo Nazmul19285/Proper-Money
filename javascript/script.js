@@ -21,9 +21,9 @@ function calculate(){
         balance.innerText = incomeAmount - fare;
         if(fare > incomeAmount){
             expense.style.backgroundColor = "red";
-            expense.innerText = fare + " Insufficient income";
+            expense.innerText = " Insufficient income";
             balance.style.backgroundColor = "red";
-            balance.innerText = incomeAmount - fare + " Insufficient income";
+            balance.innerText = " Insufficient income";
         }
     }
     else{
