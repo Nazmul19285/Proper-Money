@@ -14,8 +14,10 @@ function calculate(){
     if(Number(incomeAmount) && Number(foodAmount) && Number(rentAmount) && Number(clothesAmount)){
         let fare = foodAmount + rentAmount + clothesAmount;
         let expense = document.getElementById("totalExpenses");
+        expense.style.backgroundColor = "";
         expense.innerText = fare;
         let balance = document.getElementById("balance");
+        balance.style.backgroundColor = "";
         balance.innerText = incomeAmount - fare;
         if(fare > incomeAmount){
             expense.style.backgroundColor = "red";
